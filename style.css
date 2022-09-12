@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300&family=Qwitcher+Grypen:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 99;
+}
+header .logo {
+  width: 80%;
+}
+header .logo img {
+  width: 200px;
+}
+header .menu ul {
+  display: flex;
+}
+header .menu ul li {
+  padding: 0 20px;
+  list-style: none;
+}
+header .menu ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  transition: 0.5s ease;
+}
+header .menu ul li a:hover {
+  color: #1e9654;
+}
+
+/*===== Main Home =====*/
+
+#home .container {
+  width: 100%;
+  height: 100vh;
+  background: url(imagens/capa-adriele.png);
+  background-size: cover;
+}
+#home .container .icons {
+  width: 10;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  position: fixed;
+  z-index: 999;
+}
+#home .container .icons ion-icon {
+  padding: 30px 0;
+  font-size: 2rem;
+  color: #fff;
+  transition: 0.5s ease;
+}
+#home .container .icons ion-icon:hover {
+  color: #156fc3;
+}
+#home .container .title {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 110px;
+}
+#home .container .title h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 7rem;
+  letter-spacing: 5px;
+}
+#home .container .title h2 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 50px;
+  font-size: 3rem;
+  margin-left: 30px;
+}
+#home .container .title h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 10px;
+  margin-top: 30px;
+  margin-left: 35px;
+}
+
+/*===== Sobre =====*/
+
+#sobre .container {
+  width: 100%;
+  height: 100vh;
+  background: url(imagens/capa-meio-final.png.jfif);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#sobre .container input[type="radio"] {
+  display: none;
+}
+#sobre .container .card {
+  position: absolute;
+  width: 40%;
+  height: 80%;
+  left: 0;
+  right: 0;
+  margin: 100px auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 0 0 10px 0 rgba(217, 215, 216, 0.5);
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+#sobre .container .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#sobre .container .card h1 {
+  position: absolute;
+  z-index: 9;
+  color: #fff;
+  font-size: 2, 5rem;
+  margin-top: 50px;
+}
+#sobre .container .card p {
+  position: absolute;
+  z-index: 9;
+  width: 250px;
+  color: #fff;
+  margin-top: 120px;
+  text-align: center;
+  
+}
+
+#sobre .container .cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2 {
+  transform: translateX(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-1 {
+  transform: translateX(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3 {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+/*===== contato =====*/
+
+#contato .container {
+  width: 100%;
+  height: 100vh;
+  background: url(imagens/capa-meio-final.png.jfif);
+  background-size: cover;
+  
+}
+#contato .container .content-contato {
+  width: 70%;
+  height: 60vh;
+  margin: 0 auto;
+  padding: 130px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#contato .content-contato .contato-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+#contato .content-contato .contato-left h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+#contato .content-contato .linha {
+  width: 350px;
+  height: 3px;
+  background: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#contato .content-contato .contato-left ion-icon {
+  font-size: 1.5rem;
+  padding: 5px 0;
+}
+#contato .content-contato .contato-left span {
+  font-size: 1.2rem;
+  padding: 5px 0;
+}
+#contato .content-contato .contato-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+#contato .content-contato .contato-right h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+#contato .content-contato .contato-right input[type="email"],
+#contato .content-contato .contato-right input[type="texto"] {
+  border-radius: 20px;
+  border: none;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  outline: none;
+}
+#contato .content-contato .contato-right textarea {
+  width: 100%;
+  height: 120px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  outline: none;
+  padding: 15px 20px;
+}
+input, textarea, button {
+  box-shadow: 0 1px 2px #ddd;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  outline: none;
+  color: rgb(18, 64, 59);
+  font-size: 18px;
+  cursor: pointer;
+  
+   
+}
+input, textarea, button:hover {
+  color: #1e9654;
+  }
+
+
+
+/*===== Footer =====*/
+
+footer{
+  width: 100%;
+  height: 80px;
+  color: #fff;
+  line-height: 80px;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  position: relative;
+  top: -80px;
+}
+footer a{
+  color: #fff;
+}
+
+
+
+  
+
+
